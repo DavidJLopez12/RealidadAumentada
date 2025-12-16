@@ -166,6 +166,3 @@ Define los tipos de figura disponibles:
 3. Selecciona la plataforma de destino: Windows Machine, emulador Android, simulador iOS o Mac Catalyst
 4. Pulsa F5 para ejecutar
 
-## Licencia
-
-MIT License (o la que prefieras).
