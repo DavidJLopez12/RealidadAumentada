@@ -161,7 +161,7 @@ Define los tipos de figura disponibles:
 
 ## Cómo ejecutar
 
-1. Clona el repositorio: git clone https://github.com/tu-usuario/RealidadAumentada.git
+1. Clona el repositorio: git clone https://github.com/DavidJLopez12/RealidadAumentada/
 2. Abre en Visual Studio 2022/2025/2026 con MAUI instalado
 3. Selecciona la plataforma de destino: Windows Machine, emulador Android, simulador iOS o Mac Catalyst
 4. Pulsa F5 para ejecutar
