@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RealidadAumentada.MainPage"
+             Title="ARPage">
+
+    <Grid RowDefinitions="*,Auto">
+
+        <!-- Vista de dibujo donde se superponen los objetos AR -->
+        <GraphicsView x:Name="graphicsView"
+                      BackgroundColor="Black"
+                      Grid.Row="0" />
+
+        <!-- Panel de controles -->
+        <VerticalStackLayout Grid.Row="1"
+                             BackgroundColor="#80000000"
+                             Padding="20"
+                             Spacing="15">
+
+            <Label Text="Vista de Cámara Simulada + Realidad Aumentada"
+                   TextColor="White"
+                   FontSize="16"
+                   HorizontalOptions="Center" />
+
+            <Label x:Name="StatusLabel"
+                   Text="Sistema AR Activo - Mueve el dispositivo"
+                   TextColor="#00FF00"
+                   FontSize="14"
+                   HorizontalOptions="Center" />
+
+            <Button Text="Agregar Objeto AR"
+                    Clicked="OnAddObjectClicked"
+                    BackgroundColor="#FF5722"
+                    TextColor="White"
+                    CornerRadius="10" />
+
+            <Button x:Name="ToggleButton"
+                    Text="Pausar Seguimiento"
+                    Clicked="OnToggleTrackingClicked"
+                    BackgroundColor="#2196F3"
+                    TextColor="White"
+                    CornerRadius="10" />
+
+            <Button Text="Limpiar Objetos"
+                    Clicked="OnClearClicked"
+                    BackgroundColor="#9C27B0"
+                    TextColor="White"
+                    CornerRadius="10" />
+
+            <Label x:Name="CounterLabel"
+                   Text="Objetos AR: 0"
+                   TextColor="White"
+                   FontSize="14"
+                   HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
